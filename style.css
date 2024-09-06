@@ -5,26 +5,27 @@ body, html {
     font-family: "Raleway", sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Welcome {
+    margin-top: 0;
+}
+
 #portfolio {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-/* #header {
- min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #contactme {
-     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}  */
+}   
 
 .section-title {
     margin-top: 3em; 
@@ -38,13 +39,22 @@ body, html {
 }
 
 .portf-name {
+    margin-top : 0.5rem; 
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.portf-desc {
     margin-top : 0; 
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 #portfolio img {
-    height: auto;
-    max-width: 80%;
+    width: 80%;  
+    height: 80%;
     padding: 0 2rem;
+    object-fit: cover; 
 }
 
 
@@ -73,9 +83,6 @@ body, html {
 
 /* Small devices (tablets, 600px and up) */
 @media (min-width: 600px) {
-    body, html {
-        background-color: lightblue ; 
-    }
     .mobileTitle {
         display: none;
     }
@@ -86,7 +93,7 @@ body, html {
         justify-items: center;
      }
      
-     #header>p{
+     #header p{
          grid-column-start: 1;
          padding: 0 2rem;
      }
@@ -129,98 +136,23 @@ body, html {
 
 /* Medium devices (tablets and small laptops, 768px and up) */
 @media (min-width: 768px) {
-    body, html {
-        background-color: lightgoldenrodyellow ; 
-    }
-
-  
-
-    #header>p{
+    #header p{
         line-height: 2em;
     }
 }
 
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: 1024px) {
-    body, html {
-        background-color: lightpink ; 
-    }
-    #header>p{
+    #header p{
         line-height: 2.5em;
     }
 }
 
 /* Extra large devices (large desktops, 1280px and up) */
 @media (min-width: 1280px) {
-    body, html {
-        background-color: lightgrey ; 
+    p{
+        font-size: large;
     }
   
 }
-
-/* -----------------------------SECTION NAVBAR ---------------------------------------*/ 
-  /*.menu {
-   position: absolute; 
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.title {
-    cursor: pointer;
-    transition: transform 0.5s ease, font-size 0.5s ease, left 0.5s ease, right 0.5s ease; 
-    position: absolute;
-}
-
-
-.title[data-index="1"] {
-    left: 20px;
-}
-
-.title[data-index="2"] {
-    right: 140px;
-}
-
-.title[data-index="3"] {
-    right: 20px;
-}
-
-.title.active {
-    font-size: 2.5rem;
-}*/
-
-/* -----------------------------SECTION PORTFOLIO ----------------------------------*/
-/* #portfolio {
-    height: 90dvh;
-    margin-top: 9em;
-} */
- */
-
-/* -----------------------------SECTION CONTACT ------------------------------------*/
-/* #contactme {
-    height: 80dvh;
-    margin-top: 2em;
-    overflow: hidden;
-    width: calc(100vw - 6.5em);
-    background: #F4F1EB;     
-}
-
-.contact-container{
-    border: 1px solid black;
-    padding: 1em;   
-    height: 60dvh;
-    width: calc(100vw - 6.5em);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.contactme-name {
-    font-size: 3rem;
-    font-weight: 600;
-} */
 
